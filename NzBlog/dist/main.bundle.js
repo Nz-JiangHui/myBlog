@@ -48,7 +48,7 @@ var routes = [
         component: __WEBPACK_IMPORTED_MODULE_4__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */]
     },
     {
-        path: '',
+        path: 'myBlog',
         redirectTo: '/dashboard',
         pathMatch: 'full'
     }
