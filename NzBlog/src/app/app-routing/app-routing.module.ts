@@ -20,8 +20,8 @@ const routes:Routes =[
     component:HeroDetailComponent
   },
   {
-    path:'myBlog',
-    redirectTo:'/dashboard',
+    path:'',
+    redirectTo:'dashboard',
     pathMatch:'full'
   }
 ]
