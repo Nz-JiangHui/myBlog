@@ -40,7 +40,7 @@ var routes = [
         component: __WEBPACK_IMPORTED_MODULE_2__heroes_heroes_component__["a" /* HeroesComponent */]
     },
     {
-        path: 'dashboard',
+        path: 'myBlog',
         component: __WEBPACK_IMPORTED_MODULE_3__dashboard_dashboard_component__["a" /* DashboardComponent */]
     },
     {
@@ -49,7 +49,7 @@ var routes = [
     },
     {
         path: '',
-        redirectTo: '/dashboard',
+        redirectTo: '/myBlog',
         pathMatch: 'full'
     }
 ];
@@ -93,7 +93,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<h1>\r\n  Welcome to Nz' Learning Path!!\r\n</h1>\r\n<h1>{{title}}</h1>\r\n<nav>\r\n  <a routerLink=\"/heroes\">Heroes</a>\r\n  <a routerLink=\"/dashboard\">Dashboard</a>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n\r\n\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<h1>\r\n  Welcome to Nz' Learning Path!!\r\n</h1>\r\n<h1>{{title}}</h1>\r\n<nav>\r\n  <a routerLink=\"/heroes\">Heroes</a>\r\n  <a routerLink=\"/myBlog\">Dashboard</a>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n\r\n\r\n"
 
 /***/ }),
 

@@ -12,7 +12,7 @@ const routes:Routes =[
     component:HeroesComponent
   },
   {
-    path:'dashboard',
+    path:'myBlog',
     component:DashboardComponent
   },
   {
@@ -21,7 +21,7 @@ const routes:Routes =[
   },
   {
     path:'',
-    redirectTo:'/dashboard',
+    redirectTo:'/myBlog',
     pathMatch:'full'
   }
 ]
