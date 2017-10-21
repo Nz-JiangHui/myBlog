@@ -49,7 +49,7 @@ var routes = [
     },
     {
         path: '',
-        redirectTo: 'dashboard',
+        redirectTo: '/dashboard',
         pathMatch: 'full'
     }
 ];
@@ -93,7 +93,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<h1>\r\n  Welcome to Nz' Learning Path!!\r\n</h1>\r\n<h1>{{title}}</h1>\r\n<nav>\r\n  <a routerLink=\"heroes\">Heroes</a>\r\n  <a routerLink=\"dashboard\">Dashboard</a>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n\r\n\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<h1>\r\n  Welcome to Nz' Learning Path!!\r\n</h1>\r\n<h1>{{title}}</h1>\r\n<nav>\r\n  <a routerLink=\"/heroes\">Heroes</a>\r\n  <a routerLink=\"/dashboard\">Dashboard</a>\r\n</nav>\r\n<router-outlet></router-outlet>\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -236,7 +236,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h3>Top Heroes</h3>\r\n<div class=\"grid grid-pad\">\r\n  <a class=\"col-1-4\" *ngFor=\"let hero of heroes\" [routerLink]=\"['detail',hero.id]\">\r\n    <div class=\"module hero\">\r\n      <h4>{{hero.name}}</h4>\r\n    </div>\r\n  </a>\r\n</div>\r\n"
+module.exports = "<h3>Top Heroes</h3>\r\n<div class=\"grid grid-pad\">\r\n  <a class=\"col-1-4\" *ngFor=\"let hero of heroes\" [routerLink]=\"['/detail',hero.id]\">\r\n    <div class=\"module hero\">\r\n      <h4>{{hero.name}}</h4>\r\n    </div>\r\n  </a>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -439,7 +439,7 @@ var HeroesComponent = (function () {
         this.getHeroes();
     };
     HeroesComponent.prototype.gotoDetail = function () {
-        this.router.navigate(['detail', this.selectedHero.id]);
+        this.router.navigate(['/detail', this.selectedHero.id]);
     };
     return HeroesComponent;
 }());
